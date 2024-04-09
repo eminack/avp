@@ -1,0 +1,13 @@
+module Policies
+  class <%= class_name %>
+    include AVP::PolicyTemplate
+
+    description # Put your description here
+    belongs_to # put resource class here
+    allow(
+      actions: [], # put your actions here
+      resource: { nested: false },
+      principal: { nested: false }
+    )
+  end
+end

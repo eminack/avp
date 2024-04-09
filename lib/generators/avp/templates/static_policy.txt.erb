@@ -1,0 +1,11 @@
+module Policies
+  class <%= class_name %>
+    include AVP::StaticPolicy
+
+    description # Put your description here
+    belongs_to # put resource class here
+    allow(
+      actions: [], # put your actions here
+    )
+  end
+end
